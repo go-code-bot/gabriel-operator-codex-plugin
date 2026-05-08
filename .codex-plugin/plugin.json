@@ -1,0 +1,44 @@
+{
+  "name": "gabriel-operator",
+  "version": "1.0.0",
+  "description": "Gabriel Operator skills for building workflows, Page Builder apps, team agents, pipelines, lists, and digital twin pages.",
+  "author": {
+    "name": "go-code-bot",
+    "email": "support@gabrieloperator.com",
+    "url": "https://github.com/go-code-bot"
+  },
+  "homepage": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+  "repository": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "gabriel-operator",
+    "workflow",
+    "page-builder",
+    "team-agent",
+    "pipeline",
+    "digital-twin"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gabriel Operator",
+    "shortDescription": "Build Gabriel workflows, apps, agents, pipelines, lists, and digital twins.",
+    "longDescription": "A skills-first Codex plugin for Gabriel Operator authoring. It bundles workflow-builder, team-agents, page-builder, pipeline-builder, list-builder, digital-twin-page, and their nested action/component/node guides.",
+    "developerName": "go-code-bot",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+    "privacyPolicyURL": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+    "termsOfServiceURL": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+    "defaultPrompt": [
+      "Build a Gabriel workflow from this task.",
+      "Create a Page Builder app config.",
+      "Update a team agent workflow."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}
