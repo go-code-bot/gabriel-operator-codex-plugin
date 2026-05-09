@@ -1,0 +1,21 @@
+{
+  "name": "gabriel-operator",
+  "interface": {
+    "displayName": "Gabriel Operator"
+  },
+  "plugins": [
+    {
+      "name": "gabriel-operator",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/go-code-bot/gabriel-operator-codex-plugin.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

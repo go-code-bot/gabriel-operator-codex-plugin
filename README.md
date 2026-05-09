@@ -25,19 +25,23 @@ For an existing clone:
 git submodule update --init --recursive
 ```
 
-## Local Marketplace
+## Install In Codex
 
-This repo exposes the plugin through:
+This repository includes a Codex marketplace file at:
 
 ```text
 .agents/plugins/marketplace.json
 ```
 
-The marketplace entry points to:
+Add the marketplace in Codex CLI:
 
-```text
-./plugins/gabriel-operator
+```bash
+codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins
 ```
+
+Then open the Codex plugin directory, choose the `Gabriel Operator` marketplace, and install the plugin.
+
+The marketplace entry points at the Git-backed plugin source in this repository. The plugin itself lives at the repository root.
 
 ## Notes
 
