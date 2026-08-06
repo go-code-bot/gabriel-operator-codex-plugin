@@ -1,13 +1,13 @@
 ---
 name: page-builder
 description: >
-  Orchestrator skill for generating PageBuilderConfig JSON that powers Axio's
+  Orchestrator skill for generating PageBuilderConfig JSON that powers Gabriel Operator's
   universal app renderer. Covers web apps, mobile apps, and landing pages.
   Routes work to category-specific child skills for components and structural
   concerns.
 metadata:
   version: 1.0.0
-  author: axio
+  author: gabriel-operator
   tags:
     - page-builder
     - config-generation
@@ -27,8 +27,48 @@ compatibility:
 
 # Page Builder Orchestrator
 
-Generate complete `PageBuilderConfig` JSON objects that the Axio platform
+Generate complete `PageBuilderConfig` JSON objects that the Gabriel Operator platform
 renders into fully functional web apps, mobile apps, and landing pages.
+
+---
+
+## Using this skill in coding agents
+
+Gabriel Operator skills are designed for Claude Code, Codex, Cursor, Hermes, OpenClaw, and any agent that supports skill packs. Work in the git-backed repository connected to your Gabriel Page Builder app.
+
+### Install the skill pack
+
+| Agent | Install |
+|-------|---------|
+| **Claude Code** | `npx skills add go-code-bot/gabriel-operator-codex-plugin` or copy this folder into `.claude/skills/page-builder/` |
+| **Codex** | `codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin (includes `page-builder`) |
+| **Cursor** | Copy `server/skills/page-builder/` to `.cursor/skills/page-builder/` (project) or `~/.cursor/skills/page-builder/` (global) |
+| **Hermes / generic CLI** | `cp -R server/skills/page-builder ./your-app-repo/` |
+| **OpenClaw** | `npx skills add go-code-bot/gabriel-operator-codex-plugin` (bundles page-builder) then `openclaw gateway connect --url https://your-openclaw-gateway` |
+| **Gabriel Operator monorepo** | `cp -R server/skills/page-builder ./your-git-repo/` |
+
+There is no dedicated `go-code-bot/page-builder` package yet; the Codex plugin and monorepo copy are the supported install paths.
+
+### Modify with your coding agent
+
+1. Open the git-backed Page Builder app repository (or copy the skill scaffold into your app repo).
+2. Tell your agent: *"Read `SKILL.md` and update the PageBuilderConfig JSON — `pages`, `navSections`, `collections`, `endpoints`, `theme`, and related fields — for \<describe your app change\>. Consult child component skills under `components/` and `structural/` before editing."*
+3. Use `references/SCHEMA.md` and `references/COMPONENT-REGISTRY.md` for field shapes.
+4. Commit and push to the default branch.
+
+**Example prompts:**
+- *"Add a dashboard page with a data table bound to the users collection."*
+- *"Wire a new POST endpoint and connect it to a form submit event."*
+- **OpenClaw:** *"Read SKILL.md and update the PageBuilderConfig JSON for this app — add the requested page, components, and data bindings."*
+
+### Deploy and preview
+
+1. Push your config to the default branch, or update via the app API:
+   ```
+   GET /api/agent-configs/teams/:teamId/business-units/:businessUnitId/apps/:appId
+   PUT /api/agent-configs/teams/:teamId/business-units/:businessUnitId/apps/:appId
+   ```
+2. Open the app in Gabriel Page Builder to preview pages, navigation, and data bindings live.
 
 ---
 

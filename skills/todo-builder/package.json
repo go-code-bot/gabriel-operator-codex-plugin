@@ -1,0 +1,22 @@
+{
+  "name": "@go-code-bot/todo-builder",
+  "version": "1.0.0",
+  "description": "Gabriel Operator todo-builder skill pack for Git-backed personal To-Do workspaces",
+  "keywords": [
+    "gabriel-operator",
+    "todos",
+    "todo-workspace",
+    "skills"
+  ],
+  "license": "MIT",
+  "bin": {
+    "skills": "./cli.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/go-code-bot/todo-builder.git"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "Gabriel Operator",
+  "version": "1.1.0",
+  "description": "Gabriel Operator skills for workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+  "author": {
+    "name": "go-code-bot",
+    "email": "support@gabrieloperator.com",
+    "url": "https://github.com/go-code-bot"
+  },
+  "homepage": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+  "repository": "https://github.com/go-code-bot/gabriel-operator-codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "gabriel-operator",
+    "workflow",
+    "page-builder",
+    "pipeline",
+    "digital-twin",
+    "todo-builder",
+    "application"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "workspaceId": "todows_example",
+  "workspace": {
+    "id": "todows_example",
+    "name": "Personal To-Dos",
+    "goals": [
+      {
+        "id": "goal_example",
+        "title": "General",
+        "isDefault": true
+      }
+    ],
+    "boards": [
+      {
+        "id": "board_example",
+        "name": "Main",
+        "order": 0,
+        "isDefault": true,
+        "lanes": [
+          { "key": "todo", "name": "To Do", "color": "#94a3b8", "order": 0, "isDefault": true },
+          { "key": "in-progress", "name": "In Progress", "color": "#3b82f6", "order": 1 },
+          { "key": "blocked", "name": "Blocked", "color": "#ef4444", "order": 2 },
+          { "key": "review", "name": "Review", "color": "#f59e0b", "order": 3 },
+          { "key": "done", "name": "Done", "color": "#22c55e", "order": 4 }
+        ]
+      }
+    ],
+    "todos": [
+      {
+        "id": "todo_example",
+        "goalId": "goal_example",
+        "boardId": "board_example",
+        "laneKey": "todo",
+        "position": 1,
+        "title": "Welcome To-Do",
+        "promptText": "Say hello and confirm the To-Do workspace is connected.",
+        "scheduleType": "manual",
+        "enabled": true
+      }
+    ],
+    "checkInSchedule": null
+  },
+  "commitMessage": "Update todos workspace"
+}

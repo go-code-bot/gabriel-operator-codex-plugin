@@ -1,0 +1,123 @@
+{
+  "id": "proj_example",
+  "pageId": "dt-my-agent",
+  "userId": "user_123",
+  "name": "Product launch reel",
+  "revision": 2,
+  "preset": "landscape_16_9",
+  "scenes": [
+    {
+      "id": "scene_001",
+      "assetId": "asset_abc",
+      "type": "image",
+      "url": "https://hyperagent.com/api/files/usergenerated/threads/abc/media/hero.jpg",
+      "title": "Hero image",
+      "durationInFrames": 90,
+      "fit": "cover"
+    },
+    {
+      "id": "scene_002",
+      "assetId": "asset_def",
+      "type": "video",
+      "url": "https://hyperagent.com/api/files/usergenerated/threads/abc/media/demo.mp4",
+      "title": "Product demo",
+      "durationInFrames": 300,
+      "fit": "cover",
+      "muted": false,
+      "volume": 1,
+      "playbackRate": 1,
+      "trimStartInFrames": 30,
+      "transitionIn": "fade",
+      "transitionInFrames": 15
+    },
+    {
+      "id": "scene_003",
+      "assetId": "asset_ghi",
+      "type": "image",
+      "url": "https://hyperagent.com/api/files/usergenerated/threads/abc/media/cta.jpg",
+      "title": "Call to action",
+      "durationInFrames": 90,
+      "fit": "contain",
+      "transitionIn": "slide-left",
+      "transitionInFrames": 15
+    }
+  ],
+  "audioTracks": [
+    {
+      "id": "audio_001",
+      "assetId": "asset_jkl",
+      "type": "audio",
+      "url": "https://hyperagent.com/api/files/usergenerated/threads/abc/media/bgmusic.mp3",
+      "title": "Background music",
+      "startInFrames": 0,
+      "durationInFrames": 480,
+      "volume": 0.4,
+      "muted": false,
+      "playbackRate": 1,
+      "loop": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "overlay_001",
+      "text": "Introducing the future",
+      "position": "center",
+      "startInFrames": 15,
+      "durationInFrames": 60,
+      "color": "#ffffff",
+      "fontSize": 72,
+      "fontFamily": "Arial, sans-serif",
+      "fontWeight": 700,
+      "fontStyle": "normal",
+      "textAlign": "center",
+      "lineHeight": 1.2,
+      "textShadow": true,
+      "animation": "fade-in",
+      "animationDuration": 15,
+      "exitAnimation": "fade-out",
+      "exitAnimationDuration": 15
+    },
+    {
+      "id": "overlay_002",
+      "text": "Watch the demo",
+      "position": "bottom",
+      "startInFrames": 105,
+      "durationInFrames": 90,
+      "color": "#ffffff",
+      "fontSize": 52,
+      "fontFamily": "Arial, sans-serif",
+      "fontWeight": 600,
+      "textAlign": "center",
+      "lineHeight": 1.2,
+      "textShadow": false,
+      "background": "rgba(0,0,0,0.6)",
+      "backgroundPadding": 10,
+      "backgroundRadius": 6,
+      "animation": "slide-up",
+      "animationDuration": 12,
+      "exitAnimation": "none"
+    },
+    {
+      "id": "overlay_003",
+      "text": "Get started today",
+      "position": "bottom",
+      "startInFrames": 420,
+      "durationInFrames": 45,
+      "color": "#facc15",
+      "fontSize": 64,
+      "fontWeight": 900,
+      "textAlign": "center",
+      "lineHeight": 1.2,
+      "textShadow": true,
+      "animation": "zoom-in",
+      "animationDuration": 10,
+      "exitAnimation": "fade-out",
+      "exitAnimationDuration": 10
+    }
+  ],
+  "gitSyncStatus": "synced",
+  "gitSyncedAt": "2026-06-09T14:00:00.000Z",
+  "gitSyncError": null,
+  "createdAt": "2026-06-09T13:00:00.000Z",
+  "updatedAt": "2026-06-09T14:00:00.000Z"
+}

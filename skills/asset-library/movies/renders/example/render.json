@@ -1,0 +1,31 @@
+{
+  "id": "render_example",
+  "pageId": "dt-my-agent",
+  "userId": "user_123",
+  "projectId": "proj_example",
+  "projectRevision": 2,
+  "preset": "landscape_16_9",
+  "snapshot": {
+    "id": "proj_example",
+    "pageId": "dt-my-agent",
+    "userId": "user_123",
+    "name": "Product launch reel",
+    "revision": 2,
+    "preset": "landscape_16_9",
+    "scenes": [],
+    "audioTracks": [],
+    "overlays": [],
+    "createdAt": "2026-06-09T13:00:00.000Z",
+    "updatedAt": "2026-06-09T14:00:00.000Z"
+  },
+  "status": "completed",
+  "progress": 100,
+  "thumbnailUrl": "https://hyperagent.com/api/files/renders/render_example/thumbnail.jpg",
+  "error": null,
+  "gitSyncStatus": "synced",
+  "gitSyncedAt": "2026-06-09T14:30:00.000Z",
+  "gitSyncError": null,
+  "createdAt": "2026-06-09T14:20:00.000Z",
+  "updatedAt": "2026-06-09T14:30:00.000Z",
+  "completedAt": "2026-06-09T14:30:00.000Z"
+}

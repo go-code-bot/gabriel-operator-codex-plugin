@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "target": "todo_workspace_definitions",
+  "canonicalFile": "assets/todos.json",
+  "fields": {
+    "goals": ["id", "title", "startAt", "endAt", "isDefault"],
+    "boards": ["id", "name", "order", "lanes", "isDefault"],
+    "todos": [
+      "id",
+      "goalId",
+      "boardId",
+      "laneKey",
+      "position",
+      "title",
+      "icon",
+      "promptText",
+      "executionTarget",
+      "scheduleType",
+      "scheduledAt",
+      "recurringTimeOfDay",
+      "recurringDaysOfWeek",
+      "endAt",
+      "timezone",
+      "enabled",
+      "monitor"
+    ]
+  },
+  "excludedFromGit": [
+    "userId",
+    "pageId",
+    "status",
+    "lastRunAt",
+    "lastRunId",
+    "lastExecutionId",
+    "lastSessionId",
+    "lastError",
+    "nextRunAt",
+    "todo_runs",
+    "todo_comments",
+    "monitor.webhookToken"
+  ],
+  "scheduleTypes": ["manual", "one_time", "recurring"],
+  "executionTargetTypes": ["canvas_playbook", "checkin_call", "workflow"],
+  "workflowExecutionTarget": {
+    "fields": ["type", "appId", "endpointSlug", "inputs", "inputMode"],
+    "note": "Points at a page-builder workflow endpoint (same invoke path as webhook triggers)."
+  },
+  "monitor": {
+    "description": "Optional per-To-Do trigger config (list data-change watch + webhook). Orthogonal to scheduleType.",
+    "portableFields": ["enabled", "listWatch"],
+    "listWatchFields": ["listId", "pageId", "collectionId", "guardText", "guardAst"],
+    "note": "Never commit webhookToken. Gabriel mints a new token on import when monitor.enabled is true."
+  }
+}

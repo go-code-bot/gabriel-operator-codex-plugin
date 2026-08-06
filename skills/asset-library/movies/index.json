@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "proj_example",
+      "name": "Product launch reel",
+      "preset": "landscape_16_9",
+      "revision": 2,
+      "updatedAt": "2026-06-09T14:00:00.000Z"
+    }
+  ],
+  "renders": [
+    {
+      "id": "render_example",
+      "projectId": "proj_example",
+      "status": "completed",
+      "preset": "landscape_16_9",
+      "completedAt": "2026-06-09T14:30:00.000Z"
+    }
+  ]
+}

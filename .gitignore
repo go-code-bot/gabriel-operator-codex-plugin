@@ -1,0 +1,3 @@
+# Accidental local skill copies under the marketplace catalog — only marketplace.json belongs here
+.agents/plugins/*
+!.agents/plugins/marketplace.json
