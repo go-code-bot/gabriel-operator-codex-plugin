@@ -6,8 +6,8 @@
     "name": "Gabriel Operator",
     "email": "support@gabrieloperator.com"
   },
-  "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
-  "repository": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
+  "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
+  "repository": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
   "license": "MIT",
   "keywords": [
     "gabriel-operator",

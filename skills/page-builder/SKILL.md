@@ -26,11 +26,11 @@ Gabriel Operator skills are designed for Claude Code, Codex, Cursor, Hermes, Ope
 
 | Agent | Install |
 |-------|---------|
-| **Claude Code** | `npx skills add go-code-bot/gabriel-operator-codex-plugin` or copy this folder into `.claude/skills/page-builder/` |
-| **Codex** | `codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin (includes `page-builder`) |
+| **Claude Code** | `npx skills add Gabriel-Operator/gabriel-operator-coding-agent-plugin` or copy this folder into `.claude/skills/page-builder/` |
+| **Codex** | `codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin (includes `page-builder`) |
 | **Cursor** | Copy `server/skills/page-builder/` to `.cursor/skills/page-builder/` (project) or `~/.cursor/skills/page-builder/` (global) |
 | **Hermes / generic CLI** | `cp -R server/skills/page-builder ./your-app-repo/` |
-| **OpenClaw** | `npx skills add go-code-bot/gabriel-operator-codex-plugin` (bundles page-builder) then `openclaw gateway connect --url https://your-openclaw-gateway` |
+| **OpenClaw** | `npx skills add Gabriel-Operator/gabriel-operator-coding-agent-plugin` (bundles page-builder) then `openclaw gateway connect --url https://your-openclaw-gateway` |
 | **Gabriel Operator monorepo** | `cp -R server/skills/page-builder ./your-git-repo/` |
 
 There is no dedicated `go-code-bot/page-builder` package yet; the Codex plugin and monorepo copy are the supported install paths.

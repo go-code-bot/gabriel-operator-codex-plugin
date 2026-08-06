@@ -11,9 +11,9 @@
       "category": "development",
       "source": {
         "source": "url",
-        "url": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin.git"
+        "url": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin.git"
       },
-      "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
+      "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
       "keywords": [
         "gabriel-operator",
         "workflow",

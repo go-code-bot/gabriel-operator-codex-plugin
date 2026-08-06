@@ -18,7 +18,7 @@ Gabriel Operator skills are designed for Claude Code, Codex, Cursor, Hermes, Ope
 | Agent | Install |
 |-------|---------|
 | **Claude Code** | Copy `server/skills/asset-library/` into `.claude/skills/asset-library/` |
-| **Codex** | `codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
+| **Codex** | `codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
 | **Cursor** | Copy `server/skills/asset-library/` to `.cursor/skills/asset-library/` (project) or `~/.cursor/skills/asset-library/` (global) |
 | **Hermes / generic CLI** | `cp -R server/skills/asset-library ./your-asset-repo/` |
 | **OpenClaw** | Copy `server/skills/asset-library/` into your OpenClaw workspace skills directory, then `openclaw gateway connect --url https://your-openclaw-gateway` |

@@ -16,7 +16,7 @@ Gabriel Operator skills are designed for Claude Code, Codex, Cursor, Hermes, Ope
 | Agent | Install |
 |-------|---------|
 | **Claude Code** | Copy `server/skills/digital-twin-embed/` into `.claude/skills/digital-twin-embed/` |
-| **Codex** | `codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
+| **Codex** | `codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
 | **Cursor** | Copy `server/skills/digital-twin-embed/` to `.cursor/skills/digital-twin-embed/` (project) or `~/.cursor/skills/digital-twin-embed/` (global) |
 | **Hermes / generic CLI** | `cp -R server/skills/digital-twin-embed ./your-embed-repo/` |
 | **OpenClaw** | Copy `server/skills/digital-twin-embed/` into your OpenClaw workspace skills directory, then `openclaw gateway connect --url https://your-openclaw-gateway` |

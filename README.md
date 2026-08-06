@@ -30,7 +30,7 @@ Antigravity, Hermes, OpenClaw, Copilot, and peers consume the same `skills/<name
 ## Clone With Submodules
 
 ```bash
-git clone --recurse-submodules https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin.git
+git clone --recurse-submodules https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin.git
 ```
 
 For an existing clone:
@@ -44,7 +44,7 @@ git submodule update --init --recursive
 ### Codex / ChatGPT
 
 ```bash
-codex plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin --sparse .agents/plugins
+codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins
 ```
 
 Then install **Gabriel Operator** from that marketplace. Public directory: submit via [platform.openai.com/plugins](https://platform.openai.com/plugins) (Skills only).
@@ -62,20 +62,20 @@ Official listing: [cursor.com/marketplace/publish](https://cursor.com/marketplac
 ### Claude Code
 
 ```text
-/plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin
+/plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin
 /plugin install gabriel-operator@gabriel-operator
 ```
 
 Or:
 
 ```bash
-npx skills add Gabriel-Operator/gabriel-operator-codex-plugin
+npx skills add Gabriel-Operator/gabriel-operator-coding-agent-plugin
 ```
 
 ### Grok Build
 
 ```bash
-grok plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin
+grok plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin
 grok plugin install gabriel-operator --trust
 ```
 

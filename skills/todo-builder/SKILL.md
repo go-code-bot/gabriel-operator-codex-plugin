@@ -15,7 +15,7 @@ Gabriel Operator skills are designed for Claude Code, Codex, Cursor, Hermes, Ope
 | Agent | Install |
 |-------|---------|
 | **Claude Code** | `npx skills add go-code-bot/todo-builder` |
-| **Codex** | `codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
+| **Codex** | `codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins` then install the Gabriel Operator plugin |
 | **Cursor** | `npx github:go-code-bot/todo-builder add ./my-todos` or copy into `.cursor/skills/todo-builder/` |
 | **Hermes / generic CLI** | `npx github:go-code-bot/todo-builder add ./my-todos` |
 | **OpenClaw** | `npx skills add go-code-bot/todo-builder` then `openclaw gateway connect --url https://your-openclaw-gateway` |
