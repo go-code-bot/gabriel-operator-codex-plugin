@@ -1,0 +1,5 @@
+interface:
+  display_name: "Asset Library"
+  short_description: "Maintain asset and movie manifests."
+  brand_color: "#2563EB"
+  default_prompt: "Use $asset-library to update Git-backed asset and Remotion movie manifests."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Todo Builder"
+  short_description: "Build Git-backed personal To-Dos."
+  brand_color: "#2563EB"
+  default_prompt: "Use $todo-builder to define goals, boards, and To-Dos in assets/todos.json."

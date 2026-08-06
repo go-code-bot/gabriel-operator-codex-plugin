@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gabriel-operator",
   "version": "1.1.0",
-  "description": "Gabriel Operator skills for workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+  "description": "Gabriel Operator skills for building workflows, Page Builder apps, team agents, pipelines, lists, todos, applications, asset libraries, embeds, and digital twin pages.",
   "author": {
     "name": "Gabriel Operator",
     "email": "support@gabrieloperator.com",
@@ -15,9 +15,12 @@
     "gabriel-operator",
     "workflow",
     "page-builder",
+    "team-agent",
     "pipeline",
     "digital-twin",
     "todo-builder",
-    "application"
+    "application",
+    "asset-library",
+    "digital-twin-embed"
   ]
 }

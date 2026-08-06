@@ -1,10 +1,6 @@
 ---
 name: page-builder
-description: >
-  Orchestrator skill for generating PageBuilderConfig JSON that powers Gabriel Operator's
-  universal app renderer. Covers web apps, mobile apps, and landing pages.
-  Routes work to category-specific child skills for components and structural
-  concerns.
+description: "Orchestrator skill for generating PageBuilderConfig JSON that powers Gabriel Operator's universal app renderer. Covers web apps, mobile apps, and landing pages. Routes work to category-specific child skills for components and structural concerns."
 metadata:
   version: 1.0.0
   author: gabriel-operator

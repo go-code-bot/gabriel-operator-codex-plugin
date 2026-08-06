@@ -1,10 +1,6 @@
 ---
 name: todo-builder
-description: >
-  Build, validate, and maintain Git-backed Gabriel Operator personal To-Do
-  workspaces by editing assets/todos.json. Use this skill when defining goals,
-  boards, and To-Dos that sync from Git into Gabriel Operator and can be
-  imported onto any persona.
+description: "Build, validate, and maintain Git-backed Gabriel Operator personal To-Do workspaces by editing assets/todos.json. Use this skill when defining goals, boards, and To-Dos that sync from Git into Gabriel Operator and can be imported onto any persona."
 metadata:
   author: gabriel-operator
   version: "1.0"

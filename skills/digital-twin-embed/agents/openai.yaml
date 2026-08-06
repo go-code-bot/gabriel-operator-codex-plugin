@@ -1,0 +1,5 @@
+interface:
+  display_name: "Digital Twin Embed"
+  short_description: "Edit twin embed appearance config."
+  brand_color: "#2563EB"
+  default_prompt: "Use $digital-twin-embed to update assets/embed-config.json for twin embed appearance."

@@ -1,6 +1,6 @@
 ---
 name: asset-library
-description: Maintain a signed-in user's Git-backed generated asset library and Remotion movie manifests.
+description: "Maintain a signed-in user's Git-backed generated asset library and Remotion movie manifests."
 ---
 
 # Asset Library

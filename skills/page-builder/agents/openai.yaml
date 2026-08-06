@@ -1,0 +1,5 @@
+interface:
+  display_name: "Page Builder"
+  short_description: "Generate PageBuilderConfig JSON apps."
+  brand_color: "#2563EB"
+  default_prompt: "Use $page-builder to generate or update PageBuilderConfig JSON for this app."

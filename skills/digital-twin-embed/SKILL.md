@@ -1,6 +1,6 @@
 ---
 name: digital-twin-embed
-description: Maintain Git-backed Gabriel embed appearance via assets/embed-config.json.
+description: "Maintain Git-backed Gabriel embed appearance via assets/embed-config.json."
 ---
 
 # Digital Twin Embed Skill

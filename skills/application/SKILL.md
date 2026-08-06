@@ -1,12 +1,6 @@
 ---
 name: application
-description: >
-  Build and maintain Gabriel Operator Applications — git-backed interactive web apps
-  with an app-config.json definition, a full-page index.html (shown in the Applications
-  tab), and a compact mcp-app.html that renders as an interactive MCP App iframe inline
-  in chat when a slash command completes. Use this skill when building dashboards,
-  data visualizers, product pickers, cart viewers, or any result UI tied to a digital
-  twin slash command. Each Application reads live pipeline data via its API key.
+description: "Build and maintain Gabriel Operator Applications — git-backed interactive web apps with an app-config.json definition, a full-page index.html (shown in the Applications tab), and a compact mcp-app.html that renders as an interactive MCP App iframe inline in chat when a slash command completes. Use this skill when building dashboards, data visualizers, product pickers, cart viewers, or any result UI tied to a digital twin slash command. Each Application reads live pipeline data via its API key."
 metadata:
   author: gabriel-operator
   version: "1.0"

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Application"
+  short_description: "Build Gabriel Applications and MCP apps."
+  brand_color: "#2563EB"
+  default_prompt: "Use $application to build or update an Application with app-config.json and mcp-app.html."

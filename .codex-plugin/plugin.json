@@ -3,9 +3,9 @@
   "version": "1.1.0",
   "description": "Gabriel Operator skills for building workflows, Page Builder apps, team agents, pipelines, lists, todos, applications, asset libraries, embeds, and digital twin pages.",
   "author": {
-    "name": "go-code-bot",
+    "name": "Gabriel Operator",
     "email": "support@gabrieloperator.com",
-    "url": "https://github.com/go-code-bot"
+    "url": "https://github.com/Gabriel-Operator"
   },
   "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
   "repository": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
@@ -27,7 +27,7 @@
     "displayName": "Gabriel Operator",
     "shortDescription": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
     "longDescription": "A skills-first Codex plugin for Gabriel Operator authoring. It bundles workflow-builder, team-agents, page-builder, pipeline-builder, list-builder, todo-builder, application, digital-twin-page, digital-twin-embed, asset-library, and their nested action/component/node guides.",
-    "developerName": "go-code-bot",
+    "developerName": "Gabriel Operator",
     "category": "Productivity",
     "capabilities": [
       "Read",
@@ -39,11 +39,7 @@
     "defaultPrompt": [
       "Build a Gabriel workflow from this task.",
       "Create a Page Builder app config.",
-      "Update a team agent workflow.",
-      "Define personal To-Dos in assets/todos.json.",
-      "Build an Application with app-config.json and mcp-app.html.",
-      "Update digital twin embed appearance.",
-      "Maintain the asset-library movie and media manifests."
+      "Define personal To-Dos in assets/todos.json."
     ],
     "brandColor": "#2563EB",
     "composerIcon": "./assets/icon.png",
