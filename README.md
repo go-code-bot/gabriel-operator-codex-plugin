@@ -41,6 +41,13 @@ git submodule update --init --recursive
 
 ## Install
 
+### Short skills alias (marketing / CLI)
+
+```bash
+npx skills add Gabriel-Operator/gabriel-workflow-builder
+npx github:Gabriel-Operator/gabriel-cli scaffold persona
+```
+
 ### Codex / ChatGPT
 
 ```bash
@@ -69,6 +76,8 @@ Official listing: [cursor.com/marketplace/publish](https://cursor.com/marketplac
 Or:
 
 ```bash
+npx skills add Gabriel-Operator/gabriel-workflow-builder
+# or the full plugin:
 npx skills add Gabriel-Operator/gabriel-operator-coding-agent-plugin
 ```
 
@@ -97,3 +106,5 @@ Clients that implement [Agent Plugins](https://agentplugins.org) load root `plug
 ## Notes
 
 This plugin intentionally bundles skills only. It does not include MCP servers or app connectors yet.
+
+Short skills alias: [`Gabriel-Operator/gabriel-workflow-builder`](https://github.com/Gabriel-Operator/gabriel-workflow-builder). CLI: [`Gabriel-Operator/gabriel-cli`](https://github.com/Gabriel-Operator/gabriel-cli).
