@@ -25,7 +25,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Gabriel Operator",
-    "shortDescription": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+    "shortDescription": "Gabriel authoring skills",
     "longDescription": "A skills-first Codex plugin for Gabriel Operator authoring. It bundles workflow-builder, team-agents, page-builder, pipeline-builder, list-builder, todo-builder, application, digital-twin-page, digital-twin-embed, asset-library, and their nested action/component/node guides.",
     "developerName": "Gabriel Operator",
     "category": "Productivity",
