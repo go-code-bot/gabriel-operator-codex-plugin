@@ -1,0 +1,37 @@
+{
+  "name": "gabriel-operator",
+  "description": "Gabriel Operator authoring skills for Grok Build",
+  "owner": {
+    "name": "Gabriel Operator"
+  },
+  "plugins": [
+    {
+      "name": "gabriel-operator",
+      "description": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin.git"
+      },
+      "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
+      "keywords": [
+        "gabriel-operator",
+        "workflow",
+        "page-builder",
+        "pipeline",
+        "digital-twin",
+        "todo-builder",
+        "application",
+        "list-builder",
+        "asset-library"
+      ],
+      "domains": [
+        "gabrieloperator.com"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "Gabriel Operator"
+      }
+    }
+  ]
+}

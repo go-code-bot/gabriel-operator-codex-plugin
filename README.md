@@ -1,9 +1,16 @@
 # Gabriel Operator Plugin
 
-Skills-first plugin for authoring Gabriel Operator assets. Dual packaging:
+Skills-first plugin for authoring Gabriel Operator assets. One repo, multiple client manifests:
 
-- **Agent Plugins 1.0** — root [`plugin.json`](plugin.json) plus `skills/<name>/SKILL.md`
-- **Codex** — [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) and [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json)
+| Standard / client | Location |
+| --- | --- |
+| **Agent Plugins 1.0** | root [`plugin.json`](plugin.json) + `skills/` |
+| **Codex / ChatGPT** | [`.codex-plugin/`](.codex-plugin/) + [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json) |
+| **Cursor** | [`.cursor-plugin/`](.cursor-plugin/) |
+| **Claude Code** | [`.claude-plugin/`](.claude-plugin/) |
+| **Grok Build** | [`.grok-plugin/`](.grok-plugin/) |
+
+Antigravity, Hermes, OpenClaw, Copilot, and peers consume the same `skills/<name>/SKILL.md` tree (Agent Skills / Agent Plugins layout).
 
 ## Included Skills
 
@@ -23,7 +30,7 @@ Skills-first plugin for authoring Gabriel Operator assets. Dual packaging:
 ## Clone With Submodules
 
 ```bash
-git clone --recurse-submodules https://github.com/go-code-bot/gabriel-operator-codex-plugin.git
+git clone --recurse-submodules https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin.git
 ```
 
 For an existing clone:
@@ -32,32 +39,60 @@ For an existing clone:
 git submodule update --init --recursive
 ```
 
-## Agent Plugins
+## Install
 
-Clients that implement [Agent Plugins](https://agentplugins.org) discover this package from the repository root:
-
-1. Load root `plugin.json` (`$schema` → Agent Plugins 1.0).
-2. Discover skills from immediate children of `skills/` that contain `SKILL.md`.
-
-This plugin ships skills only. It does not include a root `mcp.json`.
-
-## Install In Codex
-
-This repository includes a Codex marketplace file at:
-
-```text
-.agents/plugins/marketplace.json
-```
-
-Add the marketplace in Codex CLI:
+### Codex / ChatGPT
 
 ```bash
-codex plugin marketplace add go-code-bot/gabriel-operator-codex-plugin --sparse .agents/plugins
+codex plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin --sparse .agents/plugins
 ```
 
-Then open the Codex plugin directory, choose the `Gabriel Operator` marketplace, and install the plugin.
+Then install **Gabriel Operator** from that marketplace. Public directory: submit via [platform.openai.com/plugins](https://platform.openai.com/plugins) (Skills only).
 
-The marketplace entry points at the Git-backed plugin source in this repository. The plugin itself lives at the repository root. Codex-specific UI metadata stays under `.codex-plugin/`; the portable Agent Plugins manifest is root `plugin.json`.
+### Cursor
+
+Local test:
+
+```bash
+ln -s "$(pwd)" ~/.cursor/plugins/local/gabriel-operator
+```
+
+Official listing: [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Team marketplace: Dashboard → Plugins → Import from Repo.
+
+### Claude Code
+
+```text
+/plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin
+/plugin install gabriel-operator@gabriel-operator
+```
+
+Or:
+
+```bash
+npx skills add Gabriel-Operator/gabriel-operator-codex-plugin
+```
+
+### Grok Build
+
+```bash
+grok plugin marketplace add Gabriel-Operator/gabriel-operator-codex-plugin
+grok plugin install gabriel-operator --trust
+```
+
+Official xAI catalog: open a PR against [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) with a SHA-pinned remote source (see repo docs).
+
+### Antigravity
+
+Copy or link `skills/*` into:
+
+- Project: `.agents/skills/`
+- Global: `~/.agents/skills/` or `~/.gemini/config/skills/` (CLI paths may differ)
+
+There is no separate Antigravity public plugin submission portal for third-party catalogs.
+
+### Agent Plugins clients (VS Code, Copilot, Kiro, …)
+
+Clients that implement [Agent Plugins](https://agentplugins.org) load root `plugin.json` and discover `skills/*/SKILL.md`.
 
 ## Notes
 

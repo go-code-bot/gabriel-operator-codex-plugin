@@ -1,0 +1,32 @@
+{
+  "name": "gabriel-operator",
+  "owner": {
+    "name": "Gabriel Operator",
+    "email": "support@gabrieloperator.com"
+  },
+  "metadata": {
+    "description": "Gabriel Operator authoring skills for Claude Code",
+    "version": "1.1.0"
+  },
+  "plugins": [
+    {
+      "name": "gabriel-operator",
+      "description": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+      "author": {
+        "name": "Gabriel Operator",
+        "email": "support@gabrieloperator.com"
+      },
+      "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-codex-plugin",
+      "tags": [
+        "gabriel-operator",
+        "workflow",
+        "page-builder",
+        "pipeline",
+        "digital-twin",
+        "todo-builder",
+        "application"
+      ],
+      "source": "./"
+    }
+  ]
+}
