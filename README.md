@@ -54,7 +54,17 @@ npx github:Gabriel-Operator/gabriel-cli scaffold persona
 codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins
 ```
 
-Then install **Gabriel Operator** from that marketplace. Public directory: submit via [platform.openai.com/plugins](https://platform.openai.com/plugins) (Skills only).
+Then install **Gabriel Operator** from that marketplace.
+
+For OpenAI public-directory review, do not upload the full cross-platform
+`skills/workflow-builder/` bundle. Upload the reduced authoring-only bundle at
+[`skills-openai/workflow-builder/`](skills-openai/workflow-builder/) as the
+`workflow-builder` replacement. It intentionally excludes remote installation,
+deployment, execution, credentials, unrestricted integrations, and external
+write actions. The full bundle remains available for local/private plugin use.
+
+Public directory: submit via
+[platform.openai.com/plugins](https://platform.openai.com/plugins).
 
 ### Cursor
 

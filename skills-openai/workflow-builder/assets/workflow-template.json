@@ -1,0 +1,27 @@
+{
+  "actionId": "",
+  "structure": {
+    "name": "workflow-draft",
+    "actionName": "Workflow Draft",
+    "baseUrl": "",
+    "screenshotEnabled": false,
+    "parameters": {
+      "execute": []
+    },
+    "groups": [],
+    "steps": [
+      {
+        "step_number": 1,
+        "stepId": "step-a1b2c",
+        "action_type": "navigate",
+        "disableBrowser": true,
+        "url": "",
+        "selectors": [],
+        "label": "Initialize browserless workflow",
+        "intent": "**Input:** No external inputs. **Processing:** Initializes a browserless Gabriel workflow draft. **Output:** No external action is performed.",
+        "timestamp": 0
+      }
+    ]
+  },
+  "commitMessage": "Draft workflow definition"
+}

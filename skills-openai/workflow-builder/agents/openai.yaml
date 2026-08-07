@@ -1,0 +1,5 @@
+interface:
+  display_name: "Workflow Builder"
+  short_description: "Draft Gabriel workflows"
+  brand_color: "#2563EB"
+  default_prompt: "Use $workflow-builder to author and validate a local Gabriel workflow draft without deploying or running it."
