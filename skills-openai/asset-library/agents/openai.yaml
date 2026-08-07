@@ -1,0 +1,5 @@
+interface:
+  display_name: "Asset Library"
+  short_description: "Draft asset manifests"
+  brand_color: "#2563EB"
+  default_prompt: "Use $asset-library to update local Gabriel asset or movie manifest drafts without fetching, rendering, or publishing media."

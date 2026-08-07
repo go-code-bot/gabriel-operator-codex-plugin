@@ -1,0 +1,5 @@
+interface:
+  display_name: "Digital Twin Page"
+  short_description: "Draft twin page config"
+  brand_color: "#2563EB"
+  default_prompt: "Use $digital-twin-page to update local digital-twin profile or conversational copy without publishing or running it."

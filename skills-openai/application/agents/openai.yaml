@@ -1,0 +1,5 @@
+interface:
+  display_name: "Application"
+  short_description: "Draft Gabriel applications"
+  brand_color: "#2563EB"
+  default_prompt: "Use $application to author local Gabriel Application files for review without publishing or deploying them."

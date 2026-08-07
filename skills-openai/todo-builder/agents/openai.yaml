@@ -1,0 +1,5 @@
+interface:
+  display_name: "Todo Builder"
+  short_description: "Draft Gabriel To-Dos"
+  brand_color: "#2563EB"
+  default_prompt: "Use $todo-builder to author a local Gabriel To-Do workspace draft without syncing or executing tasks."

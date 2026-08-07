@@ -1,0 +1,5 @@
+interface:
+  display_name: "Digital Twin Embed"
+  short_description: "Draft embed appearance"
+  brand_color: "#2563EB"
+  default_prompt: "Use $digital-twin-embed to update a local embed appearance draft without publishing or synchronizing it."

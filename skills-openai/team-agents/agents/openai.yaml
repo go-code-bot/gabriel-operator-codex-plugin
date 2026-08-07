@@ -1,0 +1,5 @@
+interface:
+  display_name: "Team Agents"
+  short_description: "Draft team-agent graphs"
+  brand_color: "#2563EB"
+  default_prompt: "Use $team-agents to author a local Page Builder team-agent draft without deploying or running the endpoint."
