@@ -3,6 +3,10 @@
 This directory contains reduced, public-directory-safe skill bundles prepared
 for OpenAI review. It does not replace the full multi-client skills in `../skills/`.
 
+For the current OpenAI directory draft, upload the single-skill ZIP at
+[`../openai-submission/gabriel-operator-openai.zip`](../openai-submission/gabriel-operator-openai.zip)
+(`persona-builder` only). Add other bundles later if a scan stays green.
+
 Upload a plugin ZIP built only from these `skills-openai/` bundles. Every skill
 here is intentionally authoring-only:
 
@@ -14,6 +18,7 @@ here is intentionally authoring-only:
 
 Included skills:
 
+- `persona-builder` (covers local drafts for page copy, lists, pipeline, team agents, optional workflow)
 - `application`
 - `asset-library`
 - `digital-twin-embed`

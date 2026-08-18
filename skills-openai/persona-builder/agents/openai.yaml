@@ -1,0 +1,5 @@
+interface:
+  display_name: "Persona Builder"
+  short_description: "Draft Gabriel AI personas"
+  brand_color: "#2563EB"
+  default_prompt: "Use $persona-builder to interview me and author a local Gabriel AI Persona draft without publishing or calling remote services."

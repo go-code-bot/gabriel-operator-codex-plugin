@@ -1,0 +1,43 @@
+{
+  "name": "gabriel-operator",
+  "version": "1.3.0",
+  "description": "Interview a user and author a local Gabriel AI Persona draft: page copy, lists, pipeline, optional team-agent graph, and optional review-only workflow.",
+  "author": {
+    "name": "Gabriel Operator",
+    "email": "support@gabrieloperator.com",
+    "url": "https://github.com/Gabriel-Operator"
+  },
+  "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
+  "repository": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "gabriel-operator",
+    "persona-builder",
+    "digital-twin",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gabriel Operator",
+    "shortDescription": "Create Gabriel AI personas",
+    "longDescription": "A skills-only Codex plugin that interviews you and authors a local Gabriel AI Persona draft: chat page copy, list schema, pipeline stages, optional team-agent graph, and optional review-only workflow. It writes local files for human review and does not publish, provision, authenticate, or call remote services.",
+    "developerName": "Gabriel Operator",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://gabrieloperator.com",
+    "privacyPolicyURL": "https://gabrieloperator.com/privacy",
+    "termsOfServiceURL": "https://gabrieloperator.com/terms",
+    "supportURL": "https://gabrieloperator.com/docs/gateway",
+    "defaultPrompt": [
+      "Create a Gabriel AI persona draft from this description.",
+      "Define lists, pipeline stages, and chat copy for this persona.",
+      "Draft a team-agent workflow for this Gabriel persona."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}
