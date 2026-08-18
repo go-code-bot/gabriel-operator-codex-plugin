@@ -6,12 +6,12 @@
   },
   "metadata": {
     "description": "Gabriel Operator authoring skills for Claude Code",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "gabriel-operator",
-      "description": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+      "description": "Create Gabriel AI Personas from a Gabi token, plus workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
       "author": {
         "name": "Gabriel Operator",
         "email": "support@gabrieloperator.com"
@@ -19,6 +19,7 @@
       "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
       "tags": [
         "gabriel-operator",
+        "persona-builder",
         "workflow",
         "page-builder",
         "pipeline",
@@ -27,6 +28,21 @@
         "application"
       ],
       "source": "./"
+    },
+    {
+      "name": "persona-builder",
+      "description": "Interview and provision a Gabriel AI Persona from a workspace Gabi token.",
+      "author": {
+        "name": "Gabriel Operator",
+        "email": "support@gabrieloperator.com"
+      },
+      "homepage": "https://github.com/Gabriel-Operator/persona-builder",
+      "tags": [
+        "gabriel-operator",
+        "persona-builder",
+        "digital-twin"
+      ],
+      "source": "./skills/persona-builder"
     }
   ]
 }

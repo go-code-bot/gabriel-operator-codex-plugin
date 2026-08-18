@@ -1,6 +1,6 @@
 # Gabriel Operator Plugin
 
-Skills-first plugin for authoring Gabriel Operator assets. One repo, multiple client manifests:
+Skills-first plugin for creating Gabriel AI Personas from a Gabi token and authoring Gabriel Operator assets. One repo, multiple client manifests:
 
 | Standard / client | Location |
 | --- | --- |
@@ -14,6 +14,10 @@ Antigravity, Hermes, OpenClaw, Copilot, and peers consume the same `skills/<name
 
 ## Included Skills
 
+Create-from-scratch vs edit-existing:
+
+- `persona-builder` interviews a user and **provisions** a new AI Persona (page, lists, pipeline, workflows, git, team agents, publish). Submodule from [`Gabriel-Operator/persona-builder`](https://github.com/Gabriel-Operator/persona-builder). Also listed as its own marketplace plugin so Codex/Claude/Cursor/Grok can install it without relying on the child-editing skills alone.
+- `gabriel-operator` is the gateway bootstrap skill. Submodule from [`Gabriel-Operator/gabriel-operator-skills`](https://github.com/Gabriel-Operator/gabriel-operator-skills).
 - `workflow-builder` for browser/API/agent workflow JSON, included as a submodule from `go-code-bot/go-workflow-builder-skills`.
 - `team-agents` for Page Builder team-agent endpoint workflows, included as a submodule from `go-code-bot/team-agents`.
 - `page-builder` for PageBuilderConfig apps, pages, components, data binding, and events. This is copied into the plugin until a dedicated page-builder skill repository exists.
@@ -50,11 +54,19 @@ npx github:Gabriel-Operator/gabriel-cli scaffold persona
 
 ### Codex / ChatGPT
 
+Create a persona from scratch (install **Persona Builder** from this marketplace, or add the dedicated repo):
+
+```bash
+codex plugin marketplace add Gabriel-Operator/persona-builder --sparse .agents/plugins
+```
+
+Child JSON authoring for resources that already exist:
+
 ```bash
 codex plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin --sparse .agents/plugins
 ```
 
-Then install **Gabriel Operator** from that marketplace.
+That marketplace lists **Persona Builder** and **Gabriel Operator**. Install Persona Builder for the interview flow; install Gabriel Operator for workflow-builder, list-builder, and the other edit skills.
 
 For OpenAI public-directory review, do not upload the full cross-platform
 `skills/workflow-builder/` bundle. Upload the reduced authoring-only bundle at
@@ -79,7 +91,15 @@ Official listing: [cursor.com/marketplace/publish](https://cursor.com/marketplac
 ### Claude Code
 
 ```text
+/plugin marketplace add Gabriel-Operator/persona-builder
+/plugin install persona-builder@persona-builder
+```
+
+Authoring plugin (edit existing git-backed resources, and Persona Builder when `skills/persona-builder` is present):
+
+```text
 /plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin
+/plugin install persona-builder@gabriel-operator
 /plugin install gabriel-operator@gabriel-operator
 ```
 
@@ -94,7 +114,15 @@ npx skills add Gabriel-Operator/gabriel-operator-coding-agent-plugin
 ### Grok Build
 
 ```bash
+grok plugin marketplace add Gabriel-Operator/persona-builder
+grok plugin install persona-builder --trust
+```
+
+Authoring plugin:
+
+```bash
 grok plugin marketplace add Gabriel-Operator/gabriel-operator-coding-agent-plugin
+grok plugin install persona-builder --trust
 grok plugin install gabriel-operator --trust
 ```
 

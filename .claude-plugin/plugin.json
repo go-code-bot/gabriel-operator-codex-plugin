@@ -1,7 +1,7 @@
 {
   "name": "gabriel-operator",
-  "version": "1.1.0",
-  "description": "Gabriel Operator skills for building workflows, Page Builder apps, team agents, pipelines, lists, todos, applications, asset libraries, embeds, and digital twin pages.",
+  "version": "1.2.0",
+  "description": "Gabriel Operator skills for creating AI Personas from a Gabi token, plus workflows, Page Builder apps, team agents, pipelines, lists, todos, applications, asset libraries, embeds, and digital twin pages.",
   "author": {
     "name": "Gabriel Operator",
     "email": "support@gabrieloperator.com"
@@ -17,6 +17,7 @@
     "digital-twin",
     "todo-builder",
     "application",
-    "asset-library"
+    "asset-library",
+    "persona-builder"
   ]
 }

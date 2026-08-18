@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "gabriel-operator",
-      "description": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
+      "description": "Create Gabriel AI Personas from a Gabi token, plus workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
       "category": "development",
       "source": {
         "source": "url",
@@ -23,12 +23,35 @@
         "todo-builder",
         "application",
         "list-builder",
-        "asset-library"
+        "asset-library",
+        "persona-builder"
       ],
       "domains": [
         "gabrieloperator.com"
       ],
-      "version": "1.1.0",
+      "version": "1.2.0",
+      "author": {
+        "name": "Gabriel Operator"
+      }
+    },
+    {
+      "name": "persona-builder",
+      "description": "Interview and provision a Gabriel AI Persona from a workspace Gabi token.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Gabriel-Operator/persona-builder.git"
+      },
+      "homepage": "https://github.com/Gabriel-Operator/persona-builder",
+      "keywords": [
+        "gabriel-operator",
+        "persona-builder",
+        "digital-twin"
+      ],
+      "domains": [
+        "gabrieloperator.com"
+      ],
+      "version": "1.0.0",
       "author": {
         "name": "Gabriel Operator"
       }

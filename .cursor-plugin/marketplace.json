@@ -6,13 +6,18 @@
   },
   "metadata": {
     "description": "Gabriel Operator authoring skills for Cursor",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "gabriel-operator",
       "source": "./",
-      "description": "Build Gabriel workflows, apps, agents, pipelines, lists, todos, assets, and digital twins."
+      "description": "Create Gabriel AI Personas from a Gabi token, plus workflows, apps, agents, pipelines, lists, todos, assets, and digital twins."
+    },
+    {
+      "name": "persona-builder",
+      "source": "./skills/persona-builder",
+      "description": "Interview and provision a Gabriel AI Persona from a workspace Gabi token."
     }
   ]
 }

@@ -13,3 +13,9 @@
 [submodule "skills/pipeline-builder"]
 	path = skills/pipeline-builder
 	url = https://github.com/go-code-bot/pipeline-builder.git
+[submodule "skills/persona-builder"]
+	path = skills/persona-builder
+	url = https://github.com/Gabriel-Operator/persona-builder.git
+[submodule "skills/gabriel-operator"]
+	path = skills/gabriel-operator
+	url = https://github.com/Gabriel-Operator/gabriel-operator-skills.git
