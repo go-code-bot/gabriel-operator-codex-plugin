@@ -15,7 +15,7 @@ token and calls Gateway APIs, which the public-directory skill scan will reject.
 1. Choose **Skills only** (not With MCP).
 2. Replace the previous ZIP with `gabriel-operator-openai.zip`.
 3. Wait for the skill safety scan (can take up to 2 hours).
-4. Confirm listing fields match `plugin.json` (3 starter prompts, product URLs).
+4. Confirm listing fields match `plugin.json` (short description `Sign up + copy Gabi token`, long description with signup + build your dream AI persona faster, 3 starter prompts, product URLs).
 5. Paste the test cases below.
 6. Submit when the scan is green.
 

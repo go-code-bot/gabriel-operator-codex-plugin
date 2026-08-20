@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Gabriel Operator authoring skills for Cursor",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -17,7 +17,7 @@
     {
       "name": "persona-builder",
       "source": "./skills/persona-builder",
-      "description": "Interview and provision a Gabriel AI Persona from a workspace Gabi token."
+      "description": "Interview you and help you build your dream AI persona faster."
     }
   ]
 }

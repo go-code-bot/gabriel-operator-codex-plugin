@@ -229,3 +229,30 @@ sequential `step_number`.
 Validate JSON syntax, unique ids, and transition/edge references locally.
 Report the files changed. Tell the user these are drafts until they create and
 publish the persona in Gabriel Operator.
+
+## Live create in Gabriel Operator
+
+This review pack does not collect tokens or call Gateway. For a live persona:
+
+1. Sign up at https://gabrieloperator.com/signup
+2. Open **Workspace → Dashboard** and copy a Gabi token from the **Gateway API key** pill
+3. Connect GitHub on the same account
+4. Connect that token to ChatGPT/Codex MCP (`Authorization: Bearer gabi_…`) or `GABRIEL_TOKEN`
+5. Use the live Persona Builder pack, not this local-draft skill
+
+Do not request, store, or use the token inside this skill.
+
+## UI fallback for live configure
+
+If the user needs a live setting this pack cannot draft in files (Composio keys,
+Arcade/Nango/Scalekit, GitHub connect, voice BYOK), send them to the UI after a
+real page exists. Do not collect those secrets here.
+
+Personal workspace (same destination as **Configure** on the persona page):
+
+https://gabrieloperator.com/workspace/edit-persona/{pageId}
+
+- Composio keys: `?tab=simulated-world` then expand **MCP connectors**
+- GitHub: https://gabrieloperator.com/workspace/developer-settings
+
+Give the full URL. Name the tab and the control.
