@@ -2,7 +2,7 @@
   "name": "gabriel-operator",
   "owner": {
     "name": "Gabriel Operator",
-    "email": "support@gabrieloperator.com"
+    "email": "hello@gabrieloperator.com"
   },
   "metadata": {
     "description": "Gabriel Operator authoring skills for Claude Code",
@@ -14,7 +14,7 @@
       "description": "Create Gabriel AI Personas from a Gabi token, plus workflows, apps, agents, pipelines, lists, todos, assets, and digital twins.",
       "author": {
         "name": "Gabriel Operator",
-        "email": "support@gabrieloperator.com"
+        "email": "hello@gabrieloperator.com"
       },
       "homepage": "https://github.com/Gabriel-Operator/gabriel-operator-coding-agent-plugin",
       "tags": [
@@ -34,7 +34,7 @@
       "description": "Interview you and help you build your dream AI persona faster.",
       "author": {
         "name": "Gabriel Operator",
-        "email": "support@gabrieloperator.com"
+        "email": "hello@gabrieloperator.com"
       },
       "homepage": "https://github.com/Gabriel-Operator/persona-builder",
       "tags": [
