@@ -1,6 +1,6 @@
 ---
 name: persona-builder
-description: Interview the user and author a local Gabriel AI Persona draft covering page copy, list schema, pipeline stages, optional team-agent graph, and optional review-only workflow. Use when the user wants to design a new persona in files they control. Produces local drafts only and does not publish, provision, authenticate, or call remote services.
+description: Interview the user and author a local Gabriel AI Persona draft covering page copy, list schema, pipeline stages, optional team-agent graph, review-only workflow, and deterministic requirement/eval specification. Use when the user wants to design a new persona in files they control. Produces local drafts only and does not publish, provision, authenticate, or call remote services.
 ---
 
 # Persona Builder
@@ -27,7 +27,7 @@ after the user reviews these files.
 Collect, propose, confirm, then write files. Do not dump empty JSON and stop.
 
 1. Ask what the persona does if the user did not already describe it.
-2. Propose a title, short description, visibility (`private` default), list columns, pipeline stages, and whether a team-agent graph or a review-only workflow is needed.
+2. Extract explicit requirements and unresolved acceptance questions. Propose a title, short description, visibility (`private` default), list columns, pipeline stages, whether a team-agent graph or a review-only workflow is needed, and what deterministic evidence would prove the confirmed behavior. Never invent acceptance criteria.
 3. Confirm the proposal.
 4. Write the files below.
 5. Summarize the files changed and note that live create/publish is a separate user action.
@@ -41,11 +41,14 @@ assets/pipeline.json
 assets/team-agent.json
 assets/task-orchestration.json
 assets/workflow.json
+assets/persona-evals.json
 ```
 
 Write `chat-config.json`, `list.json`, and `pipeline.json` for every new persona.
 Write team-agent and workflow files only when the confirmed proposal includes them.
 Preserve unknown fields and stable ids when a file already exists.
+
+`persona-evals.json` remains a local review draft in this skill. It does not run tests or authorize publication.
 
 ## Page copy (`assets/chat-config.json`)
 
@@ -223,6 +226,31 @@ instead of adding it.
 
 Keep every step field at the step root. Give each step a unique `stepId` and
 sequential `step_number`.
+
+## Quality specification (`assets/persona-evals.json`)
+
+Map each owner-confirmed requirement to typed implementation locators and reciprocal scenario ids. Include golden, incomplete-input, adversarial, approval, and rejection cases. Use deterministic assertion types for outputs, decisions, forbidden tools, list fields, pipeline stages, artifacts, and external side-effect boundaries. A subjective `rubric` may be advisory only.
+
+Connector fixtures must contain fictional deterministic outputs. They are test data, not credentials, and this public skill never dispatches them. Preserve explicit safety boundaries from the brief, such as “draft but never send,” “propose but never book,” and “never pay/change/delete without approval.”
+
+```json
+{
+  "schemaVersion": 1,
+  "requirements": [{
+    "id": "example-outcome",
+    "category": "command_outcome",
+    "description": "The command returns the confirmed result.",
+    "implementedBy": [{ "kind": "command", "resourceRef": "command.example" }],
+    "verifiedBy": ["example-golden", "example-adversarial"]
+  }],
+  "suites": [{
+    "id": "production-readiness",
+    "requiredForProduction": true,
+    "mode": "mock",
+    "cases": []
+  }]
+}
+```
 
 ## Finish
 
