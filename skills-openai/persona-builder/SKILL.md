@@ -280,7 +280,8 @@ Personal workspace (same destination as **Configure** on the persona page):
 
 https://gabrieloperator.com/workspace/edit-persona/{pageId}
 
-- Composio keys: `?tab=simulated-world` then expand **MCP connectors**
+- Composio keys: `?tab=simulated-world` then expand **MCP connectors**. Add the key, Save, enable toolkits. Do not ask them to Connect Gmail/Sheets on Edit Persona.
+- Runner OAuth: from the persona chat click **Connect** / **Connected**, or open https://gabrieloperator.com/workspace/ai-resources?pageId={pageId}. On **Connected toolkits**, click Connect on each card. Canvas then uses those connections. They can also Connect when Canvas asks. Screenshot: https://gabrieloperator.com/assets/docs/ai-resources-connected-toolkits.jpg
 - GitHub: https://gabrieloperator.com/workspace/developer-settings
 
 Give the full URL. Name the tab and the control.
