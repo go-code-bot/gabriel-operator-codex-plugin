@@ -19,3 +19,6 @@
 [submodule "skills/gabriel-operator"]
 	path = skills/gabriel-operator
 	url = https://github.com/Gabriel-Operator/gabriel-operator-skills.git
+[submodule "skills/video-use"]
+	path = skills/video-use
+	url = https://github.com/browser-use/video-use.git

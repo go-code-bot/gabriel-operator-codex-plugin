@@ -28,6 +28,7 @@ Create-from-scratch vs edit-existing:
 - `application` for Applications (`app-config.json`, `mcp-app.html`, Applications tab UI). Copied from the monorepo until a dedicated skill repository exists.
 - `digital-twin-embed` for embed appearance (`assets/embed-config.json`). Copied from the monorepo until a dedicated skill repository exists.
 - `asset-library` for Git-backed generated asset and Remotion movie manifests. Copied from the monorepo until a dedicated skill repository exists.
+- `video-use` edits real video footage by conversation — cuts, color grading, word-level speech-synced captions, and animation overlays (HyperFrames, Remotion, Manim, or PIL). Submodule from the upstream project, [`browser-use/video-use`](https://github.com/browser-use/video-use) (third-party, not a Gabriel Operator skill — vendored as-is since its own `SKILL.md`/`helpers/` layout already matches the Agent Skills convention).
 
 `go-code-bot/go-task-orchestrator-skills` is not included because it is an older `team-agents` package and would duplicate the current `team-agents` skill name.
 

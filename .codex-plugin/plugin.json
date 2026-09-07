@@ -1,6 +1,6 @@
 {
   "name": "gabriel-operator",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Gabriel Operator skills for creating AI Personas from a Gabi token, plus workflows, Page Builder apps, team agents, pipelines, lists, todos, applications, asset libraries, embeds, and digital twin pages.",
   "author": {
     "name": "Gabriel Operator",
